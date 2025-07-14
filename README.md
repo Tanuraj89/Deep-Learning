@@ -1,11 +1,14 @@
 # Deep-Learning
 Deep Learning Project (CIFAR-100)
-1. What is the CIFAR-100 Data Set?
+🎯 What Are We Trying to Achieve in This Project?
+The core goal is to train a CNN (Convolutional Neural Network) from scratch using a subset of the CIFAR-100 image dataset to classify images into correct categories (like tree, bottle, keyboard, etc.). The project tests different CNN architectures, activation functions, optimizers, and training setups to find combinations that give better classification accuracy.
+
+📁 1. What is the CIFAR-100 Data Set?
 CIFAR-100 is a set of 60,000 tiny photographs, each of which is labelled with one of 100 categories, such as dog, bus, fish, or mountain.
 The images are only 32x32 pixels, which is the size of a small stamp, and they are coloured, not black and white. We ask the computer, "Can you tell what's in this image?" It's like a visual test.
 I have only chosen 10 out of 100 categories for training so it would be quick and easy. This is because we don't have powerful machines or a lot of RAM in free Google Colab.
 
- 🧠 2. What Does It Mean to "Train a CNN"?
+ 🧠2. What Does It Mean to "Train a CNN"?
 
  It is like training a system to look at thousands of example images and learn how to tell what each one shows by looking at patterns like shapes, edges, and colours.It operates the same way as training a new employee. We start by showing the system a lot of examples, such "this is a car" and "this is a ship." Over time, the system learns how to tell them apart on its own.
 
@@ -31,7 +34,7 @@ Batch size tells it how many pictures to learn from at once.
 Epoch is the number of times it views the entire dataset.
 Best outcomes: Batch size is 64 or 128, and there are about 15 to 20 epochs.
 
-4. How to Read Graphs, Charts, and Percentages ?
+📊 4. How to Read Graphs, Charts, and Percentages ?
 During model training, you will usually observe two main plots:
 A. Plot of accuracy (training vs. validation)
 Shows how often predictions were right throughout time.
