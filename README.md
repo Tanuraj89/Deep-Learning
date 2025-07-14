@@ -1,5 +1,6 @@
 # Deep-Learning
 Deep Learning Project (CIFAR-100)
+
 🎯 What Are We Trying to Achieve in This Project?
 The core goal is to train a CNN (Convolutional Neural Network) from scratch using a subset of the CIFAR-100 image dataset to classify images into correct categories (like tree, bottle, keyboard, etc.). The project tests different CNN architectures, activation functions, optimizers, and training setups to find combinations that give better classification accuracy.
 
@@ -15,33 +16,33 @@ I have only chosen 10 out of 100 categories for training so it would be quick an
 🔧  3. What were the tests that were done to make things more accurate?
 You ran a number of tests to make the underlying model more accurate after it was working. We changed one thing for each test and then looked at what happened: 
 
-a) Make the Model Bigger (Deeper)
+✅ a) Make the Model Bigger (Deeper)
 More layers mean more brain capacity.
 Result: The accuracy became a little better, but there were too many layers, which made it too complicated (risk of overfitting).
 
-b) Use Different Functions to Turn On
+✅ b) Use Different Functions to Turn On
 These are basically the model's reasoning units that help it figure out whether something is important or not.
 Best results: Tanh and Leaky ReLU
 Worst: Sigmoid (too sluggish, doesn't learn well) 
 
-c) Try Different Optimisers
+✅ c) Try Different Optimisers
 You may think of this as different ways to learn.
 Best: Adam (quick and even)
 RMSprop is the worst, especially if the learning rate is low. 
 
-d) Change the training settings, like the batch size and the number of epochs.
+✅ d) Change the training settings, like the batch size and the number of epochs.
 Batch size tells it how many pictures to learn from at once.
 Epoch is the number of times it views the entire dataset.
 Best outcomes: Batch size is 64 or 128, and there are about 15 to 20 epochs.
 
 📊 4. How to Read Graphs, Charts, and Percentages ?
 During model training, you will usually observe two main plots:
-A. Plot of accuracy (training vs. validation)
+✅ A. Plot of accuracy (training vs. validation)
 Shows how often predictions were right throughout time.
 The model is learning if the accuracy goes up steadily.
 If the training accuracy is high but the validation accuracy is low, the model is overfitting (it is remembering things instead of generalising them).
 
-B. Loss Graph
+✅ B. Loss Graph
 Tells you how erroneous the model is.
 It's better to have less loss.
 If loss keeps going down, the training is working.
