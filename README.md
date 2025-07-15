@@ -1,4 +1,4 @@
-# Deep-Learning
+# CNN-Optimization from CIFAR-100
 Deep Learning Project (CIFAR-100)
 
 🎯 What Are We Trying to Achieve in This Project?
